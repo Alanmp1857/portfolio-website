@@ -1,0 +1,43 @@
+.skill-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    min-height: 300px;
+}
+
+.skill-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.skill-item span:first-child {
+    width: 120px;
+}
+
+.skill-item mat-progress-bar {
+    flex: 1;
+}
+
+.skill-item span:last-child {
+    width: 50px;
+    text-align: right;
+}

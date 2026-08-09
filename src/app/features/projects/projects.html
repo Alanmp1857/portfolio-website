@@ -1,0 +1,15 @@
+<div>
+    <h2 class="title">Projects</h2>
+    <div class="categories">
+        @for (category of categories; track $index) {
+        <span class="category" (click)="selectCategory(category)" [class.active]="selectedCategory === category">
+            {{ category.name }}
+        </span>
+        }
+    </div>
+    <div class="projects-container">
+        @for (project of filteredProjects; track $index) {
+            <app-project-card [cardData]="project"></app-project-card>
+        }
+    </div>
+</div>

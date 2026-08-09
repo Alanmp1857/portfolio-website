@@ -1,0 +1,73 @@
+<div class="contact-container">
+    <h2 class="title">Let's Connect</h2>
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile style="background-color: lightgray">
+            <div class="contact-form-container">
+                <form [formRoot]="contactForm" (submit)="onSubmit($event)" class="contact-form">
+                    <mat-form-field>
+                        <input type="text" matInput placeholder="Name" [formField]="contactForm.name">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input type="email" matInput placeholder="Email" [formField]="contactForm.email">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <textarea type="text" matInput placeholder="Message" [formField]="contactForm.message"></textarea>
+                    </mat-form-field>
+                    <button class="submit-btn" type="submit">
+                        <span>Send Message</span>
+                        <mat-icon>send</mat-icon>
+                    </button>
+                </form>
+            </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="contact-info-container">
+                <div class="self-info">
+                    <div class="info-container">
+                        <mat-icon>email</mat-icon>
+                        <div class="info-text">
+                            <label for="email">Email</label>
+                            <span>alanmathew1857@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <mat-icon>phone</mat-icon>
+                        <div class="info-text">
+                            <label for="phone">Phone</label>
+                            <span>+91 9405420290</span>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <mat-icon>location_on</mat-icon>
+                        <div class="info-text">
+                            <label for="location">Location</label>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                    <div class="info-container">
+                        <mat-icon>assignment_ind</mat-icon>
+                        <div class="info-text">
+                            <label for="available">Available for</label>
+                            <span>Full-time</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <h3>Follow Me</h3>
+                    <div class="icon-container">
+                        <a href="#" target="_blank" class="icons">
+                            <mat-icon>link</mat-icon>
+                        </a>
+                        <a href="#">
+                            <mat-icon>linkedin</mat-icon>
+                        </a>
+                        <a href="mailto:alan.panicker@example.com">
+                            <mat-icon>email</mat-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

@@ -1,0 +1,8 @@
+<div>
+    <h2 class="title">Certificates</h2>
+    <div class="certificate-cards">
+        @for (certificate of certificateData; track $index) {
+            <app-certificate-card [cardData]="certificate"></app-certificate-card>
+        }
+    </div>
+</div>

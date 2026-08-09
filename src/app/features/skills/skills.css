@@ -1,0 +1,13 @@
+.skill-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 40px;
+}

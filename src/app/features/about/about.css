@@ -1,0 +1,28 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    background: lightgreen;
+    padding: 40px 80px 40px 40px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar {
+    object-fit: cover;
+    height: 80%;
+    border-radius: 10%;
+}

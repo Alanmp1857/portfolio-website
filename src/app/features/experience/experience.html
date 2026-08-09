@@ -1,0 +1,40 @@
+<section class="experience">
+    <div class="header">
+        <h2 class="title">Experience</h2>
+        <!-- <a href="#">View All Experience →</a> -->
+    </div>
+
+    @for(exp of experiences; track $index){
+    <div class="timeline-item">
+        <!-- Date -->
+        <div class="date">
+            {{exp.date}}
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <div class="circle" [style.background]="exp.color"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3>{{exp.role}}</h3>
+                    <h4>{{exp.company}}</h4>
+                </div>
+
+                <span class="badge">
+                    {{exp.duration}}
+                </span>
+            </div>
+            <ul class="card-points">
+                @for(point of exp.points; track $index){
+                <li>{{point}}</li>
+                }
+            </ul>
+        </div>
+    </div>
+    }
+</section>

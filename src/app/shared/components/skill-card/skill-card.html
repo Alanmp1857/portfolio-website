@@ -1,0 +1,19 @@
+<div class="skill-card">
+    @if (cardData?.[0]) {
+        <h3 class="skill-title">
+            <mat-icon>{{ cardData[0].icon }}</mat-icon>
+            {{ cardData[0].skill }}
+        </h3>
+        <div>
+            <ul>
+                @for (data of cardData[0].technologies; track $index) {
+                    <li class="skill-item">
+                        <span>{{ data.name }}</span>
+                        <mat-progress-bar mode="determinate" [value]="data.percentage"></mat-progress-bar>
+                        <span>{{ data.percentage }}%</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>

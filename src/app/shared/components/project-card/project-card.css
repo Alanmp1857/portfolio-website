@@ -1,0 +1,56 @@
+
+.project-card {
+    height: 100%;
+    margin: 20px;
+    min-height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 300px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chip-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 4fr));
+    gap: 10px;
+}
+
+.card {
+    height: 40%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.tech-chip {
+    padding: 6px;
+    background-color: gray;
+    border-radius: 10px;
+    /* width: fit-content; */
+    width: auto;
+}
+
+.btn-style {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}

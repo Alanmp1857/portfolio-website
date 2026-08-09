@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    background: lightblue;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
